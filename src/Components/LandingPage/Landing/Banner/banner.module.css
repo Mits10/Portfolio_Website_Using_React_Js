@@ -1,0 +1,21 @@
+.banner{
+    position: relative;
+}
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+  }
+  .topleft {
+    position: absolute;
+    top: 50%;
+    left:25%;
+    text-align: left;
+    font-size: 18px;
+  }
+  .topleft h2{
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+  }

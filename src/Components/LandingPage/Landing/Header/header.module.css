@@ -1,0 +1,14 @@
+.header{
+    width: 100%;
+    background-color:#2d2d30;
+    overflow: auto;
+}
+.header button{
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color:rgb(240, 234, 234);
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgb(26, 24, 24);
+}
