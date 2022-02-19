@@ -15,23 +15,25 @@ const Item = styled(Paper)(({ theme }) => ({
 const ProjectPortfolio= ()=>{
 return (
     <>
-    <h2> Hello I am ProjectPortfolio</h2>
+    <div className='projectPortfolio'>
+   <div>
+    <h4>04</h4>
+    <h1 className='size-50'>My <br /> Projects</h1>
+    </div>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={6} md={4}>
           <Item><div className='zoom'><img src={cv2} alt=""/></div></Item>
         </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={6} md={4}>
           <Item><div className='zoom'><img src={cv2} alt=""/></div></Item>
         </Grid>
-        <Grid item xs={6} md={3}>
-          <Item><div className='zoom'><img src={cv2} alt=""/></div></Item>
-        </Grid>
-        <Grid item xs={6} md={3}>
+        <Grid item xs={6} md={4}>
           <Item><div className='zoom'><img src={cv2} alt=""/></div></Item>
         </Grid>
       </Grid>
     </Box>
+    </div>
     </>
 
 );

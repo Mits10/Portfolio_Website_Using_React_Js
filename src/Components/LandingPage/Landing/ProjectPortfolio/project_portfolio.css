@@ -1,6 +1,6 @@
 .zoom {
     padding: 50px;
-    background-color: green;
+    background-color: #2d2d30;
     transition: transform .2s;
     width: 200px;
     height: 200px;
@@ -11,3 +11,22 @@
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
   }
+  .projectPortfolio{
+    padding: 100px;
+    background-color: #2d2d30;
+  }
+  .projectPortfolio h4{
+      
+        font-family: 'Lato', sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        color: #425BB5;
+        font-size: 16px;
+        
+  }
+
+.size-50 {
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+}

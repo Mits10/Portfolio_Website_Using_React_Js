@@ -1,54 +1,62 @@
 import React, {useState} from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
-  const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-  ];
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import './keyskill.css';
+import Grid from '@mui/material/Grid';
+
 const KeySkills= ()=>{
-return (
+  const [value, setValue] = useState(4.5);
+  const [skills,setskills]=useState([
+    {
+      id:1,
+      name: 'HTML'
+    },
+    {
+      id:1,
+      name: 'CSS'
+    },
+    {
+      id:1,
+      name: 'JavaScript'
+    },
+    {
+      id:1,
+      name: 'React'
+    }
+  ])
+  return (
     <>
-    <h2> Hello I am KeySkills</h2>
-    <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell>Dessert (100g serving)</TableCell>
-                <TableCell align="right">Calories</TableCell>
-                <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                <TableCell align="right">Protein&nbsp;(g)</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map((row) => (
-                <TableRow
-                  key={row.name}
-                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
-                  <TableCell align="right">{row.calories}</TableCell>
-                  <TableCell align="right">{row.fat}</TableCell>
-                  <TableCell align="right">{row.carbs}</TableCell>
-                  <TableCell align="right">{row.protein}</TableCell>
-                </TableRow>
+    <div className='keyskills'>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <div>
+              <h4>02</h4>
+              <h2>My<br/>Skills</h2>
+                </div>
+   
+        </Grid>
+        <Grid item xs={12}>
+         <div className='kschild'>
+            <Box
+              sx={{
+                '& > legend': { mt: 2 },
+              }}
+              >
+              {skills.map(skill=>(
+                <>
+              <Typography component="legend">{skill.name}</Typography>
+              <Rating name="read-only" value={value} precision={0.5}  readOnly />
+              </>
               ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+             {/*/>*/}
+            </Box>
+        </div>
+        </Grid>
+    </Grid>
+    </Box>
+    </div>
     </>
 
 );
