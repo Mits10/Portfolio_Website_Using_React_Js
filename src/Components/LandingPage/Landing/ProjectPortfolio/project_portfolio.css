@@ -1,10 +1,12 @@
 .zoom {
     padding: 50px;
     background-color: #2d2d30;
-    transition: transform .2s;
+    /*transition: transform .2s;*/
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    -webkit-transition: all .2s ease-in-out .2s;
+    transition: all .2s ease-in-out .2s;
 }
 .zoom:hover {
     -ms-transform: scale(1.5); /* IE 9 */

@@ -1,12 +1,13 @@
 .banner{
-    position: relative;
+  background-size: cover;
+  height: 100vh;
 }
 img { 
     width: 100%;
     height: auto;
-    opacity: 0.8;
+    /*opacity: 0.8;
     filter: grayscale(90%);
-    -webkit-filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);*/
   }
   .topleft {
     position: absolute;

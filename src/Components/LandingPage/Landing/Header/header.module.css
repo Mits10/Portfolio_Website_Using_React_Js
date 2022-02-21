@@ -1,14 +1,33 @@
-.header{
-    width: 100%;
-    background-color:#2d2d30;
-    overflow: auto;
-}
-.header button{
-    float: right;
+.topnav{
+    overflow: hidden;
     text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+   
+}
+.topnav a{
+    float: right;
+    display: block;
     padding: 12px;
     color:rgb(240, 234, 234);
     text-decoration: none;
     font-size: 17px;
-    background-color: rgb(26, 24, 24);
+    
+
 }
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }

@@ -31,6 +31,9 @@ return (
         <Grid item xs={6} md={4}>
           <Item><div className='zoom'><img src={cv2} alt=""/></div></Item>
         </Grid>
+        <Grid item xs={6} md={4}>
+          <Item><button>View More</button></Item>
+        </Grid>
       </Grid>
     </Box>
     </div>
