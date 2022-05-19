@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import './footer.css';
+import { Card } from '@mui/material';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -25,13 +26,18 @@ return (
      <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Item> <div>
+          <Card sx={{
+            height: 400,
+            padding: 8,
+            borderRadius: 4,
+            }}> 
+            <div>
                     <h3>Phone Number</h3>
                     <p>+20 5555 569 42</p>
                     <h3> Mobile Numberr</h3>
-                    <p>+20 5555 569 42</p>
+                    <p>+8801590105584</p>
                     <h3>Email</h3>
-                    <p>mail@info.me </p>
+                    <p>tanbin.mitaly@gmail.com</p>
 
                     <h3>Social Network</h3>
 
@@ -42,10 +48,14 @@ return (
                         <li><a href="#"><i className="fa fa-google"></i></a></li>
                     </ul>
                 </div> 
-            </Item>
+            </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Item><Box
+          <Card sx={{
+            height: 400,
+            padding: 8,
+            borderRadius: 4,
+            }}> <Box
                     component="form"
                     sx={{
                         '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -91,7 +101,7 @@ return (
                             
                             </Stack>
                 </Box>        
-        </Item>
+        </Card>
         </Grid>
       </Grid>
     </Box>
